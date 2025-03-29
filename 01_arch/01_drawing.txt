@@ -1,0 +1,10 @@
+[CLIENT (Laptop)]                     [SERVER (M720q)]
++------------------------+            +------------------------+
+| Go Client Program      |  <------>  | Go Server Program      |
+|                        |  TCP/UDP   |                        |
+| Reads keyboard input   |            | Receives input         |
+| Encodes + sends events |            | Injects as keyboard    |
++------------------------+            +------------------------+
+                                              |
+                                              v
+                                     [Windows Keyboard Driver]
